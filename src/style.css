@@ -1,0 +1,83 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+html {
+   
+}
+body {
+    min-width: 600px;
+    min-height: 100vh;
+    background-image: url("~/assets/taco.jpg");
+    display: flex;
+    flex-direction: column;
+}
+body > * {
+}
+img,picture,svg,video {
+    display: block;
+    max-width: 100%;
+}
+
+input,textarea,button,select {
+    font: inherit;
+}
+.header {
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    background-color: dimgray;
+    opacity: .9;
+}
+.header > * {
+    height: 50%;
+    padding: 5px;
+    margin: 0px 10px;
+    border: 1px black solid;
+    border-bottom: 0;
+    background-color: dimgray;
+}
+.contentContainer {
+    margin-top: 20px;
+    margin-inline: auto;
+    width: max(80%, 480px);
+    min-height: 1200px;
+    background-color: dimgray;
+    opacity: .9;
+
+    text-align: center;
+    padding-top: 20px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.content > * {
+    flex: 0 1 80%;
+    border: 5px white solid;
+    margin: 0px 15%;
+    padding: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 10px;
+    background-color: dimgray;
+    min-height: 64px;
+    opacity: .9;
+    padding: 5px;
+}
+.footer > * {
+    flex: none;
+    min-width: 25ch;
+    margin: 5px;
+}
+
