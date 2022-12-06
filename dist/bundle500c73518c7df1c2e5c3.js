@@ -26,7 +26,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n*, *::before, *::after {\n    box-sizing: border-box;\n}\n* {\n    margin: 0;\n    padding: 0;\n    font: inherit;\n}\nbody {\n    min-height: 100vh;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n}\nimg,picture,svg,video {\n    display: block;\n    max-width: 100%;\n}\n\ninput,textarea,button,select {\n    font: inherit;\n}\n.header {\n    height: 64px;\n    display: flex;\n    justify-content: center;\n    align-items:flex-end;\n    background-color: dimgray;\n    opacity: .9;\n}\n.header > * {\n    height: 50%;\n    padding: 5px;\n    margin: 0px 10px;\n    border: 1px black solid;\n    border-bottom: 0;\n    background-color: dimgray;\n}\n.contentContainer {\n    margin-top: 20px;\n    margin-inline: auto;\n    width: 1000px;\n    min-height: 1200px;\n    background-color: dimgray;\n    opacity: .9;\n}\n.footer {\n    display: flex;\n    justify-content:space-around;\n    align-items: center;\n    margin-top: 10px;\n    background-color: dimgray;\n    min-height: 64px;\n    opacity: .9;\n}\n\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":";AACA;IACI,sBAAsB;AAC1B;AACA;IACI,SAAS;IACT,UAAU;IACV,aAAa;AACjB;AACA;IACI,iBAAiB;IACjB,yDAA0C;AAC9C;AACA;IACI,cAAc;IACd,eAAe;AACnB;;AAEA;IACI,aAAa;AACjB;AACA;IACI,YAAY;IACZ,aAAa;IACb,uBAAuB;IACvB,oBAAoB;IACpB,yBAAyB;IACzB,WAAW;AACf;AACA;IACI,WAAW;IACX,YAAY;IACZ,gBAAgB;IAChB,uBAAuB;IACvB,gBAAgB;IAChB,yBAAyB;AAC7B;AACA;IACI,gBAAgB;IAChB,mBAAmB;IACnB,aAAa;IACb,kBAAkB;IAClB,yBAAyB;IACzB,WAAW;AACf;AACA;IACI,aAAa;IACb,4BAA4B;IAC5B,mBAAmB;IACnB,gBAAgB;IAChB,yBAAyB;IACzB,gBAAgB;IAChB,WAAW;AACf","sourcesContent":["\n*, *::before, *::after {\n    box-sizing: border-box;\n}\n* {\n    margin: 0;\n    padding: 0;\n    font: inherit;\n}\nbody {\n    min-height: 100vh;\n    background-image: url(\"~/assets/taco.jpg\");\n}\nimg,picture,svg,video {\n    display: block;\n    max-width: 100%;\n}\n\ninput,textarea,button,select {\n    font: inherit;\n}\n.header {\n    height: 64px;\n    display: flex;\n    justify-content: center;\n    align-items:flex-end;\n    background-color: dimgray;\n    opacity: .9;\n}\n.header > * {\n    height: 50%;\n    padding: 5px;\n    margin: 0px 10px;\n    border: 1px black solid;\n    border-bottom: 0;\n    background-color: dimgray;\n}\n.contentContainer {\n    margin-top: 20px;\n    margin-inline: auto;\n    width: 1000px;\n    min-height: 1200px;\n    background-color: dimgray;\n    opacity: .9;\n}\n.footer {\n    display: flex;\n    justify-content:space-around;\n    align-items: center;\n    margin-top: 10px;\n    background-color: dimgray;\n    min-height: 64px;\n    opacity: .9;\n}\n\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n*, *::before, *::after {\n    box-sizing: border-box;\n}\n* {\n    margin: 0;\n    padding: 0;\n    font: inherit;\n}\nhtml {\n   \n}\nbody {\n    min-width: 600px;\n    min-height: 100vh;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    display: flex;\n    flex-direction: column;\n}\nbody > * {\n}\nimg,picture,svg,video {\n    display: block;\n    max-width: 100%;\n}\n\ninput,textarea,button,select {\n    font: inherit;\n}\n.header {\n    height: 64px;\n    display: flex;\n    justify-content: center;\n    align-items:flex-end;\n    background-color: dimgray;\n    opacity: .9;\n}\n.header > * {\n    height: 50%;\n    padding: 5px;\n    margin: 0px 10px;\n    border: 1px black solid;\n    border-bottom: 0;\n    background-color: dimgray;\n}\n.contentContainer {\n    margin-top: 20px;\n    margin-inline: auto;\n    width: max(80%, 480px);\n    min-height: 1200px;\n    background-color: dimgray;\n    opacity: .9;\n\n    text-align: center;\n    padding-top: 20px;\n}\n.content{\n    display: flex;\n    gap: 50px;\n    flex-direction: column;\n}\n.content > * {\n    flex: 0 1 80%;\n    border: 5px white solid;\n    margin: 0px 15%;\n    padding: 10px;\n}\n\n.footer {\n    display: flex;\n    justify-content:space-around;\n    align-items: center;\n    margin-top: 10px;\n    background-color: dimgray;\n    min-height: 64px;\n    opacity: .9;\n    padding: 5px;\n}\n.footer > * {\n    flex: none;\n    min-width: 25ch;\n    margin: 5px;\n}\n\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":";AACA;IACI,sBAAsB;AAC1B;AACA;IACI,SAAS;IACT,UAAU;IACV,aAAa;AACjB;AACA;;AAEA;AACA;IACI,gBAAgB;IAChB,iBAAiB;IACjB,yDAA0C;IAC1C,aAAa;IACb,sBAAsB;AAC1B;AACA;AACA;AACA;IACI,cAAc;IACd,eAAe;AACnB;;AAEA;IACI,aAAa;AACjB;AACA;IACI,YAAY;IACZ,aAAa;IACb,uBAAuB;IACvB,oBAAoB;IACpB,yBAAyB;IACzB,WAAW;AACf;AACA;IACI,WAAW;IACX,YAAY;IACZ,gBAAgB;IAChB,uBAAuB;IACvB,gBAAgB;IAChB,yBAAyB;AAC7B;AACA;IACI,gBAAgB;IAChB,mBAAmB;IACnB,sBAAsB;IACtB,kBAAkB;IAClB,yBAAyB;IACzB,WAAW;;IAEX,kBAAkB;IAClB,iBAAiB;AACrB;AACA;IACI,aAAa;IACb,SAAS;IACT,sBAAsB;AAC1B;AACA;IACI,aAAa;IACb,uBAAuB;IACvB,eAAe;IACf,aAAa;AACjB;;AAEA;IACI,aAAa;IACb,4BAA4B;IAC5B,mBAAmB;IACnB,gBAAgB;IAChB,yBAAyB;IACzB,gBAAgB;IAChB,WAAW;IACX,YAAY;AAChB;AACA;IACI,UAAU;IACV,eAAe;IACf,WAAW;AACf","sourcesContent":["\n*, *::before, *::after {\n    box-sizing: border-box;\n}\n* {\n    margin: 0;\n    padding: 0;\n    font: inherit;\n}\nhtml {\n   \n}\nbody {\n    min-width: 600px;\n    min-height: 100vh;\n    background-image: url(\"~/assets/taco.jpg\");\n    display: flex;\n    flex-direction: column;\n}\nbody > * {\n}\nimg,picture,svg,video {\n    display: block;\n    max-width: 100%;\n}\n\ninput,textarea,button,select {\n    font: inherit;\n}\n.header {\n    height: 64px;\n    display: flex;\n    justify-content: center;\n    align-items:flex-end;\n    background-color: dimgray;\n    opacity: .9;\n}\n.header > * {\n    height: 50%;\n    padding: 5px;\n    margin: 0px 10px;\n    border: 1px black solid;\n    border-bottom: 0;\n    background-color: dimgray;\n}\n.contentContainer {\n    margin-top: 20px;\n    margin-inline: auto;\n    width: max(80%, 480px);\n    min-height: 1200px;\n    background-color: dimgray;\n    opacity: .9;\n\n    text-align: center;\n    padding-top: 20px;\n}\n.content{\n    display: flex;\n    gap: 50px;\n    flex-direction: column;\n}\n.content > * {\n    flex: 0 1 80%;\n    border: 5px white solid;\n    margin: 0px 15%;\n    padding: 10px;\n}\n\n.footer {\n    display: flex;\n    justify-content:space-around;\n    align-items: center;\n    margin-top: 10px;\n    background-color: dimgray;\n    min-height: 64px;\n    opacity: .9;\n    padding: 5px;\n}\n.footer > * {\n    flex: none;\n    min-width: 25ch;\n    margin: 5px;\n}\n\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -550,6 +550,126 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
+/***/ "./src/homeTab.js":
+/*!************************!*\
+  !*** ./src/homeTab.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "create": () => (/* binding */ create)
+/* harmony export */ });
+/* harmony import */ var _assets_tacoMonster_gif__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/tacoMonster.gif */ "./assets/tacoMonster.gif");
+
+const create = (container) => {
+    const title = titleDivMaker("Greg's Food Restaurant");
+    const missionDiv = missionStatement()
+    container.append(title,missionDiv);
+}
+const titleDivMaker = (content) =>{
+    const titleDiv = document.createElement("p");
+    titleDiv.classList.add("title")
+    titleDiv.innerHTML = content;
+    return titleDiv;
+}
+
+const missionStatement = () => {
+    const missionDiv = document.createElement("div")
+    const missionImg = document.createElement("img")
+    const missionText = document.createElement("p")
+    const missionSig = document.createElement("p")
+    missionImg.src = _assets_tacoMonster_gif__WEBPACK_IMPORTED_MODULE_0__;
+    missionDiv.classList.add("missionStatement");
+    missionText.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sollicitudin tempor id eu nisl nunc mi ipsum. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin. "
+    missionSig.innerHTML = "Greg."
+    missionDiv.append(missionText,missionSig,missionImg)
+    return missionDiv;
+
+}
+
+
+
+/***/ }),
+
+/***/ "./src/initButtons.js":
+/*!****************************!*\
+  !*** ./src/initButtons.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "initButtons": () => (/* binding */ initButtons)
+/* harmony export */ });
+/* harmony import */ var _homeTab__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homeTab */ "./src/homeTab.js");
+
+
+const initButtons= () => {
+    const homeBtn = document.getElementById("homeBtn")
+    homeBtn.addEventListener("click",() => {
+        homeTab();
+    })
+    const menuBtn = document.getElementById("menuBtn") 
+    menuBtn.addEventListener("click", () => {
+        menuTab();
+    })
+    const contactBtn = document.getElementById("contactBtn") 
+    contactBtn.addEventListener("click", () => {
+        contactTab();
+    })
+    homeTab(); //load immediately
+}
+
+
+const container = document.querySelector(".content")
+
+const clearContainer = () => {
+    container.innerHTML = "";
+}
+const currentTab = (() => {
+    let page = "";
+    const updatePage = (newPage) => {
+        page = newPage;
+    }
+    return {
+        getTab() {
+            return page;
+        },
+        updatePage
+    }
+})()
+
+const homeTab = () => {
+    if (currentTab.getTab()=="home") {
+        return;
+    }
+    currentTab.updatePage("home");
+    clearContainer();
+    console.log("home Tab pressed");
+    _homeTab__WEBPACK_IMPORTED_MODULE_0__.create(container);
+    currentTab.updatePage("home");
+}
+const menuTab = () => {
+    if (currentTab.getTab()=="menu") {
+        return;
+    }
+    currentTab.updatePage("menu");
+    clearContainer();
+    console.log("menu tab pressed");
+}
+const contactTab = () => {
+    if (currentTab.getTab()=="contact") {
+        return;
+    }
+    currentTab.updatePage("contact");
+    clearContainer();
+    console.log("contact tab pressed"); 
+}
+
+
+/***/ }),
+
 /***/ "./assets/taco.jpg":
 /*!*************************!*\
   !*** ./assets/taco.jpg ***!
@@ -557,6 +677,16 @@ module.exports = styleTagTransform;
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "taco.jpg";
+
+/***/ }),
+
+/***/ "./assets/tacoMonster.gif":
+/*!********************************!*\
+  !*** ./assets/tacoMonster.gif ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "tacoMonster.gif";
 
 /***/ })
 
@@ -702,37 +832,12 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
+/* harmony import */ var _initButtons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./initButtons */ "./src/initButtons.js");
 
 
-const initButtons= () => {
-    const homeBtn = document.getElementById("homeBtn")
-    homeBtn.addEventListener("click",() => {
-        homeTab();
-    })
-    const menuBtn = document.getElementById("menuBtn") 
-    menuBtn.addEventListener("click", () => {
-        menuTab();
-    })
-    const contactBtn = document.getElementById("contactBtn") 
-    contactBtn.addEventListener("click", () => {
-        contactTab();
-    })
-}
-
-const homeTab = () => {
-    console.log("home Tab pressed");
-}
-const menuTab = () => {
-    console.log("menu tab pressed");
-    
-}
-const contactTab = () => {
-    console.log("contact tab pressed"); 
-}
-
-initButtons()
+(0,_initButtons__WEBPACK_IMPORTED_MODULE_1__.initButtons)()
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlefd287b83ae485d2a5b24.js.map
+//# sourceMappingURL=bundle500c73518c7df1c2e5c3.js.map

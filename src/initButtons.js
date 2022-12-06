@@ -1,3 +1,4 @@
+import * as home from "./homeTab";
 
 const initButtons= () => {
     const homeBtn = document.getElementById("homeBtn")
@@ -12,31 +13,52 @@ const initButtons= () => {
     contactBtn.addEventListener("click", () => {
         contactTab();
     })
+    homeTab(); //load immediately
 }
+
+
 const container = document.querySelector(".content")
 
 const clearContainer = () => {
     container.innerHTML = "";
 }
+const currentTab = (() => {
+    let page = "";
+    const updatePage = (newPage) => {
+        page = newPage;
+    }
+    return {
+        getTab() {
+            return page;
+        },
+        updatePage
+    }
+})()
 
 const homeTab = () => {
+    if (currentTab.getTab()=="home") {
+        return;
+    }
+    currentTab.updatePage("home");
     clearContainer();
     console.log("home Tab pressed");
-    const title = titleDivMaker("Greg's Food Restaurant");
-    container.appendChild(title)
-
+    home.create(container);
+    currentTab.updatePage("home");
 }
 const menuTab = () => {
+    if (currentTab.getTab()=="menu") {
+        return;
+    }
+    currentTab.updatePage("menu");
+    clearContainer();
     console.log("menu tab pressed");
-    
 }
 const contactTab = () => {
+    if (currentTab.getTab()=="contact") {
+        return;
+    }
+    currentTab.updatePage("contact");
+    clearContainer();
     console.log("contact tab pressed"); 
-}
-const titleDivMaker = (content) =>{
-    const titleDiv = document.createElement("p");
-    titleDiv.classList.add("title")
-    titleDiv.innerHTML = content;
-    return titleDiv;
 }
 export { initButtons};
