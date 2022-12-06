@@ -1,5 +1,5 @@
 import * as home from "./homeTab";
-
+import * as menu from "./menuTab";
 const initButtons= () => {
     const homeBtn = document.getElementById("homeBtn")
     homeBtn.addEventListener("click",() => {
@@ -13,7 +13,7 @@ const initButtons= () => {
     contactBtn.addEventListener("click", () => {
         contactTab();
     })
-    homeTab(); //load immediately
+    menuTab(); //load immediately
 }
 
 
@@ -51,6 +51,7 @@ const menuTab = () => {
     }
     currentTab.updatePage("menu");
     clearContainer();
+    menu.create(container);
     console.log("menu tab pressed");
 }
 const contactTab = () => {

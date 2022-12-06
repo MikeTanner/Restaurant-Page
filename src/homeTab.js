@@ -53,4 +53,4 @@ const location = () => {
 }
 
 
-export {create}
+export {create, titleDivMaker}
