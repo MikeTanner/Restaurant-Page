@@ -7,12 +7,10 @@ function importAll(r) {
 }
 const images = importAll(require.context('../assets', false, /\.(gif|png|jpe?g|svg)$/));
 const create = (container) => {
-    const title = titleDivMaker("Menu")
-    const sidesTitle = titleDivMaker("Sides")
-    const beverageTitle = titleDivMaker("Beverages")
-    const entreeTitle = titleDivMaker("Entrees")
-    const menuItem = card("lemon", "dekasdlf", "#4", cache["./enchalada.jpeg"])    
-    container.append(title, sidesTitle,menuItem)
+    sideItemGen(container);
+    mainItemGen(container);
+    drinkItemGen(container);
+
 }
 const card = (...cardArray) => {
     const cardDiv = document.createElement("div")
@@ -31,14 +29,28 @@ const card = (...cardArray) => {
     })
     return cardDiv
 }
-const sideItemGen = () => {
-    //gen sides
+const sideItemGen = (container) => {
+    const sidesTitle = titleDivMaker("Sides") 
+    const item1= card("Corn", lorem15(), "$3", cache["./mexicanCorn.jpg"])
+    const item2= card("Rice", lorem15(), "$2", cache["./rice.jpg"]) 
+    
+    container.append(sidesTitle,item1,item2)
 }
-const mainItemGen = () => {
-    //gen main items
+const mainItemGen = (container) => {
+    const entreeTitle = titleDivMaker("Entrees")
+    const item1= card("Taco", lorem15(), "$4", cache["./taco.jpg"])
+    const item2= card("Steak", lorem15(), "$10", cache["./steak.jpg"])
+    container.append(entreeTitle,item1,item2)
 }
-const drinkItemGen = () => {
+const drinkItemGen = (container) => {
+    const beverageTitle = titleDivMaker("Beverages")
+    const item1= card("Marg", lorem15(), "$10", cache["./marg.jpg"])
+    const item2= card("Punch", lorem15(), "$10", cache["./punch.jpg"])
+    container.append(beverageTitle,item1,item2)
     //gen drink items
+}
+const lorem15 = () => {
+    return "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, facere! Blanditiis aut asperiores nostrum deserunt."
 }
 
 

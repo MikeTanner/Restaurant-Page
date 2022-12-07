@@ -1,6 +1,48 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./assets sync \\.(gif%7Cpng%7Cjpe?g%7Csvg)$":
+/*!****************************************************************!*\
+  !*** ./assets/ sync nonrecursive \.(gif%7Cpng%7Cjpe?g%7Csvg)$ ***!
+  \****************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var map = {
+	"./contactMe.gif": "./assets/contactMe.gif",
+	"./enchalada.jpeg": "./assets/enchalada.jpeg",
+	"./logo.jpg": "./assets/logo.jpg",
+	"./marg.jpg": "./assets/marg.jpg",
+	"./mexicanCorn.jpg": "./assets/mexicanCorn.jpg",
+	"./pickle.jpg": "./assets/pickle.jpg",
+	"./punch.jpg": "./assets/punch.jpg",
+	"./rice.jpg": "./assets/rice.jpg",
+	"./steak.jpg": "./assets/steak.jpg",
+	"./taco.jpg": "./assets/taco.jpg",
+	"./tacoDance.gif": "./assets/tacoDance.gif",
+	"./tacoMonster.gif": "./assets/tacoMonster.gif"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./assets sync \\.(gif%7Cpng%7Cjpe?g%7Csvg)$";
+
+/***/ }),
 
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
 /*!*************************************************************!*\
@@ -8,6 +50,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -24,9 +67,10 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../assets/taco.jpg */ "./assets/taco.jpg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap);"]);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n*, *::before, *::after {\n    box-sizing: border-box;\n}\n* {\n    margin: 0;\n    padding: 0;\n    font: inherit;\n}\nhtml {\n   \n}\nbody {\n    min-width: 600px;\n    min-height: 100vh;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    display: flex;\n    flex-direction: column;\n}\nbody > * {\n}\nimg,picture,svg,video {\n    display: block;\n    max-width: 100%;\n}\n\ninput,textarea,button,select {\n    font: inherit;\n}\n.header {\n    height: 64px;\n    display: flex;\n    justify-content: center;\n    align-items:flex-end;\n    background-color: dimgray;\n    opacity: .9;\n}\n.header > * {\n    height: 50%;\n    padding: 5px;\n    margin: 0px 10px;\n    border: 1px black solid;\n    border-bottom: 0;\n    background-color: dimgray;\n}\n.contentContainer {\n    margin-top: 20px;\n    margin-inline: auto;\n    width: max(80%, 480px);\n    min-height: 1200px;\n    background-color: dimgray;\n    opacity: .9;\n\n    text-align: center;\n    padding-top: 20px;\n}\n.content{\n    display: flex;\n    gap: 50px;\n    flex-direction: column;\n}\n.content > * {\n    flex: 0 1 80%;\n    border: 5px white solid;\n    margin: 0px 15%;\n    padding: 10px;\n}\n\n.footer {\n    display: flex;\n    justify-content:space-around;\n    align-items: center;\n    margin-top: 10px;\n    background-color: dimgray;\n    min-height: 64px;\n    opacity: .9;\n    padding: 5px;\n}\n.footer > * {\n    flex: none;\n    min-width: 25ch;\n    margin: 5px;\n}\n\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":";AACA;IACI,sBAAsB;AAC1B;AACA;IACI,SAAS;IACT,UAAU;IACV,aAAa;AACjB;AACA;;AAEA;AACA;IACI,gBAAgB;IAChB,iBAAiB;IACjB,yDAA0C;IAC1C,aAAa;IACb,sBAAsB;AAC1B;AACA;AACA;AACA;IACI,cAAc;IACd,eAAe;AACnB;;AAEA;IACI,aAAa;AACjB;AACA;IACI,YAAY;IACZ,aAAa;IACb,uBAAuB;IACvB,oBAAoB;IACpB,yBAAyB;IACzB,WAAW;AACf;AACA;IACI,WAAW;IACX,YAAY;IACZ,gBAAgB;IAChB,uBAAuB;IACvB,gBAAgB;IAChB,yBAAyB;AAC7B;AACA;IACI,gBAAgB;IAChB,mBAAmB;IACnB,sBAAsB;IACtB,kBAAkB;IAClB,yBAAyB;IACzB,WAAW;;IAEX,kBAAkB;IAClB,iBAAiB;AACrB;AACA;IACI,aAAa;IACb,SAAS;IACT,sBAAsB;AAC1B;AACA;IACI,aAAa;IACb,uBAAuB;IACvB,eAAe;IACf,aAAa;AACjB;;AAEA;IACI,aAAa;IACb,4BAA4B;IAC5B,mBAAmB;IACnB,gBAAgB;IAChB,yBAAyB;IACzB,gBAAgB;IAChB,WAAW;IACX,YAAY;AAChB;AACA;IACI,UAAU;IACV,eAAe;IACf,WAAW;AACf","sourcesContent":["\n*, *::before, *::after {\n    box-sizing: border-box;\n}\n* {\n    margin: 0;\n    padding: 0;\n    font: inherit;\n}\nhtml {\n   \n}\nbody {\n    min-width: 600px;\n    min-height: 100vh;\n    background-image: url(\"~/assets/taco.jpg\");\n    display: flex;\n    flex-direction: column;\n}\nbody > * {\n}\nimg,picture,svg,video {\n    display: block;\n    max-width: 100%;\n}\n\ninput,textarea,button,select {\n    font: inherit;\n}\n.header {\n    height: 64px;\n    display: flex;\n    justify-content: center;\n    align-items:flex-end;\n    background-color: dimgray;\n    opacity: .9;\n}\n.header > * {\n    height: 50%;\n    padding: 5px;\n    margin: 0px 10px;\n    border: 1px black solid;\n    border-bottom: 0;\n    background-color: dimgray;\n}\n.contentContainer {\n    margin-top: 20px;\n    margin-inline: auto;\n    width: max(80%, 480px);\n    min-height: 1200px;\n    background-color: dimgray;\n    opacity: .9;\n\n    text-align: center;\n    padding-top: 20px;\n}\n.content{\n    display: flex;\n    gap: 50px;\n    flex-direction: column;\n}\n.content > * {\n    flex: 0 1 80%;\n    border: 5px white solid;\n    margin: 0px 15%;\n    padding: 10px;\n}\n\n.footer {\n    display: flex;\n    justify-content:space-around;\n    align-items: center;\n    margin-top: 10px;\n    background-color: dimgray;\n    min-height: 64px;\n    opacity: .9;\n    padding: 5px;\n}\n.footer > * {\n    flex: none;\n    min-width: 25ch;\n    margin: 5px;\n}\n\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n    --shadow-color: 0deg 0% 0%;\n    --shadow-elevation-medium:\n    0.1px 0.6px 0.7px hsl(var(--shadow-color) / 0.11),\n    0.2px 2.1px 2.4px -0.8px hsl(var(--shadow-color) / 0.11),\n    0.5px 5.3px 6px -1.7px hsl(var(--shadow-color) / 0.11),\n    1.3px 12.9px 14.6px -2.5px hsl(var(--shadow-color) / 0.11);\n}\n\n*, *::before, *::after {\n    box-sizing: border-box;\n}\n* {\n    margin: 0;\n    padding: 0;\n    font: inherit;\n}\nhtml * {\n    font-family: 'Goudy Bookletter 1911', serif;\n\n}\nbody {\n    min-width: 600px;\n    min-height: 100vh;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n}\nbody > * {\n}\nimg,picture,svg,video {\n    display: block;\n    max-width: 100%;\n}\n\ninput,textarea,button,select {\n    font: inherit;\n}\nimg {\n    margin-left: auto;\n    margin-right: auto;\n}\nh2,h3 {\n    font-size: 1.3rem;\n    font-weight: lighter;\n}\n.title {\n    font-size: 1.75rem;\n}\n.header {\n    height: 40px;\n    display: flex;\n    justify-content: center;\n    align-items:flex-end;\n    background-color: #92a5c3;\n}\n.header > * {\n    cursor: pointer;\n    height: 70%;\n    padding: 5px;\n    margin: 0px 10px;\n    border: 1px black solid;\n    border-bottom: 0;\n    background-color: #92a5c3;\n}\n\n.header > *:hover {\n    font-weight: 900;\n}\n.contentContainer {\n    margin-top: 20px;\n    margin-inline: auto;\n    width: clamp(480px,90%, 900px);\n/*     min-height: 1200px;\n */    background-color: #92a5c3;\n    text-align: center;\n    padding: 20px 0px;\n}\n.content{\n    display: flex;\n    gap: 50px;\n    flex-direction: column;\n}\n\n.content > * {\n    flex: 0 1 80%;\n    box-shadow: var(--shadow-elevation-medium);\n    border-radius: 15px;\n    margin: 0px 15%;\n    padding: 10px;\n    background-color: aliceblue;\n}\n\n.footer {\n    display: flex;\n    justify-content:space-around;\n    align-items: center;\n    margin-top: 10px;\n    background-color: #92a5c3;\n    min-height: 40px;\n    padding: 5px;\n}\n.footer > * {\n    flex: none;\n    min-width: 25ch;\n    margin: 5px;\n}\n.contactInfo {\n    background-color: #92a5c3;\n    box-shadow: none;\n}\n\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AACA;IACI,0BAA0B;IAC1B;;;;8DAI0D;AAC9D;;AAEA;IACI,sBAAsB;AAC1B;AACA;IACI,SAAS;IACT,UAAU;IACV,aAAa;AACjB;AACA;IACI,2CAA2C;;AAE/C;AACA;IACI,gBAAgB;IAChB,iBAAiB;IACjB,yDAA0C;IAC1C,aAAa;IACb,sBAAsB;IACtB,8BAA8B;AAClC;AACA;AACA;AACA;IACI,cAAc;IACd,eAAe;AACnB;;AAEA;IACI,aAAa;AACjB;AACA;IACI,iBAAiB;IACjB,kBAAkB;AACtB;AACA;IACI,iBAAiB;IACjB,oBAAoB;AACxB;AACA;IACI,kBAAkB;AACtB;AACA;IACI,YAAY;IACZ,aAAa;IACb,uBAAuB;IACvB,oBAAoB;IACpB,yBAAyB;AAC7B;AACA;IACI,eAAe;IACf,WAAW;IACX,YAAY;IACZ,gBAAgB;IAChB,uBAAuB;IACvB,gBAAgB;IAChB,yBAAyB;AAC7B;;AAEA;IACI,gBAAgB;AACpB;AACA;IACI,gBAAgB;IAChB,mBAAmB;IACnB,8BAA8B;AAClC;EACE,KAAK,yBAAyB;IAC5B,kBAAkB;IAClB,iBAAiB;AACrB;AACA;IACI,aAAa;IACb,SAAS;IACT,sBAAsB;AAC1B;;AAEA;IACI,aAAa;IACb,0CAA0C;IAC1C,mBAAmB;IACnB,eAAe;IACf,aAAa;IACb,2BAA2B;AAC/B;;AAEA;IACI,aAAa;IACb,4BAA4B;IAC5B,mBAAmB;IACnB,gBAAgB;IAChB,yBAAyB;IACzB,gBAAgB;IAChB,YAAY;AAChB;AACA;IACI,UAAU;IACV,eAAe;IACf,WAAW;AACf;AACA;IACI,yBAAyB;IACzB,gBAAgB;AACpB","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');\n:root {\n    --shadow-color: 0deg 0% 0%;\n    --shadow-elevation-medium:\n    0.1px 0.6px 0.7px hsl(var(--shadow-color) / 0.11),\n    0.2px 2.1px 2.4px -0.8px hsl(var(--shadow-color) / 0.11),\n    0.5px 5.3px 6px -1.7px hsl(var(--shadow-color) / 0.11),\n    1.3px 12.9px 14.6px -2.5px hsl(var(--shadow-color) / 0.11);\n}\n\n*, *::before, *::after {\n    box-sizing: border-box;\n}\n* {\n    margin: 0;\n    padding: 0;\n    font: inherit;\n}\nhtml * {\n    font-family: 'Goudy Bookletter 1911', serif;\n\n}\nbody {\n    min-width: 600px;\n    min-height: 100vh;\n    background-image: url(\"~/assets/taco.jpg\");\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n}\nbody > * {\n}\nimg,picture,svg,video {\n    display: block;\n    max-width: 100%;\n}\n\ninput,textarea,button,select {\n    font: inherit;\n}\nimg {\n    margin-left: auto;\n    margin-right: auto;\n}\nh2,h3 {\n    font-size: 1.3rem;\n    font-weight: lighter;\n}\n.title {\n    font-size: 1.75rem;\n}\n.header {\n    height: 40px;\n    display: flex;\n    justify-content: center;\n    align-items:flex-end;\n    background-color: #92a5c3;\n}\n.header > * {\n    cursor: pointer;\n    height: 70%;\n    padding: 5px;\n    margin: 0px 10px;\n    border: 1px black solid;\n    border-bottom: 0;\n    background-color: #92a5c3;\n}\n\n.header > *:hover {\n    font-weight: 900;\n}\n.contentContainer {\n    margin-top: 20px;\n    margin-inline: auto;\n    width: clamp(480px,90%, 900px);\n/*     min-height: 1200px;\n */    background-color: #92a5c3;\n    text-align: center;\n    padding: 20px 0px;\n}\n.content{\n    display: flex;\n    gap: 50px;\n    flex-direction: column;\n}\n\n.content > * {\n    flex: 0 1 80%;\n    box-shadow: var(--shadow-elevation-medium);\n    border-radius: 15px;\n    margin: 0px 15%;\n    padding: 10px;\n    background-color: aliceblue;\n}\n\n.footer {\n    display: flex;\n    justify-content:space-around;\n    align-items: center;\n    margin-top: 10px;\n    background-color: #92a5c3;\n    min-height: 40px;\n    padding: 5px;\n}\n.footer > * {\n    flex: none;\n    min-width: 25ch;\n    margin: 5px;\n}\n.contactInfo {\n    background-color: #92a5c3;\n    box-shadow: none;\n}\n\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -39,6 +83,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "\n*, *::before, *::after {\n    box-si
   \*****************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /*
@@ -133,6 +178,7 @@ module.exports = function (cssWithMappingToString) {
   \********************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 module.exports = function (url, options) {
@@ -168,6 +214,7 @@ module.exports = function (url, options) {
   \************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 module.exports = function (item) {
@@ -196,6 +243,7 @@ module.exports = function (item) {
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -250,6 +298,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \****************************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 var stylesInDOM = [];
@@ -363,6 +412,7 @@ module.exports = function (list, options) {
   \********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 var memo = {};
@@ -411,6 +461,7 @@ module.exports = insertBySelector;
   \**********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -431,6 +482,7 @@ module.exports = insertStyleElement;
   \**********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -452,6 +504,7 @@ module.exports = setAttributesWithoutAttributes;
   \***************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -531,6 +584,7 @@ module.exports = domAPI;
   \*********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -550,22 +604,60 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
+/***/ "./src/contactTab.js":
+/*!***************************!*\
+  !*** ./src/contactTab.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "create": () => (/* binding */ create)
+/* harmony export */ });
+/* harmony import */ var _homeTab__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homeTab */ "./src/homeTab.js");
+
+const create = (container) => {
+    const title = (0,_homeTab__WEBPACK_IMPORTED_MODULE_0__.titleDivMaker)("Contact Information");
+    const contact = contactInfo();
+    container.append(title,contact)
+}
+
+const contactInfo = () => {
+    const container = document.createElement("div")
+    container.classList.add("contactInfo")
+    const smallTitle = document.createElement("h2")
+    smallTitle.innerHTML = "Greg_forbes@gregoly.com"
+    const content = document.createElement("p")
+    content.innerHTML = "920-442-0333";
+    container.append(smallTitle, content)
+
+    return container;
+}
+
+
+/***/ }),
+
 /***/ "./src/homeTab.js":
 /*!************************!*\
   !*** ./src/homeTab.js ***!
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "create": () => (/* binding */ create)
+/* harmony export */   "create": () => (/* binding */ create),
+/* harmony export */   "titleDivMaker": () => (/* binding */ titleDivMaker)
 /* harmony export */ });
 /* harmony import */ var _assets_tacoMonster_gif__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/tacoMonster.gif */ "./assets/tacoMonster.gif");
 
 const create = (container) => {
     const title = titleDivMaker("Greg's Food Restaurant");
     const missionDiv = missionStatement()
-    container.append(title,missionDiv);
+    const hoursDiv = hoursOfOperation();
+    const locationDiv = location();
+    container.append(title,missionDiv, hoursDiv, locationDiv);
 }
 const titleDivMaker = (content) =>{
     const titleDiv = document.createElement("p");
@@ -585,8 +677,34 @@ const missionStatement = () => {
     missionSig.innerHTML = "Greg."
     missionDiv.append(missionText,missionSig,missionImg)
     return missionDiv;
-
 }
+
+const hoursOfOperation = () => {
+    const container = document.createElement("div")
+    container.classList.add("schedule")
+    const smallTitle = document.createElement("h2")
+    smallTitle.innerHTML = "Hours:"
+    container.appendChild(smallTitle)
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    days.forEach(((item) => {
+        const content = document.createElement("p")
+        content.innerHTML = item + ": 8am-8pm";
+        container.appendChild(content);
+    }))
+    return container;
+}
+const location = () => {
+    const container = document.createElement("div")
+    container.classList.add("location")
+    const smallTitle = document.createElement("h2")
+    smallTitle.innerHTML = "Location"
+    const content = document.createElement("p")
+    content.innerHTML = "313 Greg Zone, Gregland, Ohio";
+    container.append(smallTitle, content)
+
+    return container;
+}
+
 
 
 
@@ -598,11 +716,15 @@ const missionStatement = () => {
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "initButtons": () => (/* binding */ initButtons)
 /* harmony export */ });
 /* harmony import */ var _homeTab__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homeTab */ "./src/homeTab.js");
+/* harmony import */ var _menuTab__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menuTab */ "./src/menuTab.js");
+/* harmony import */ var _contactTab__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contactTab */ "./src/contactTab.js");
+
 
 
 const initButtons= () => {
@@ -656,6 +778,7 @@ const menuTab = () => {
     }
     currentTab.updatePage("menu");
     clearContainer();
+    _menuTab__WEBPACK_IMPORTED_MODULE_1__.create(container);
     console.log("menu tab pressed");
 }
 const contactTab = () => {
@@ -664,9 +787,182 @@ const contactTab = () => {
     }
     currentTab.updatePage("contact");
     clearContainer();
+    _contactTab__WEBPACK_IMPORTED_MODULE_2__.create(container);
     console.log("contact tab pressed"); 
 }
 
+
+/***/ }),
+
+/***/ "./src/menuTab.js":
+/*!************************!*\
+  !*** ./src/menuTab.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "create": () => (/* binding */ create)
+/* harmony export */ });
+/* harmony import */ var _homeTab__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homeTab */ "./src/homeTab.js");
+
+
+
+const cache = {};
+function importAll(r) {
+  r.keys().forEach((key) => (cache[key] = r(key)));
+}
+const images = importAll(__webpack_require__("./assets sync \\.(gif%7Cpng%7Cjpe?g%7Csvg)$"));
+const create = (container) => {
+    sideItemGen(container);
+    mainItemGen(container);
+    drinkItemGen(container);
+
+}
+const card = (...cardArray) => {
+    const cardDiv = document.createElement("div")
+    cardDiv.classList.add("menuItem")
+    const nameTitle = document.createElement("h3")
+    const description = document.createElement("p")
+    const menuPrice = document.createElement("h4")
+    const picture = document.createElement("img")
+    const cardElementArray = [nameTitle, description, menuPrice, picture]
+    for (let i = 0; i < cardArray.length-1; i++) {
+       cardElementArray[i].innerHTML = cardArray[i]
+    }
+    picture.src = cardArray[3];
+    cardElementArray.forEach((elem)=> {
+        cardDiv.appendChild(elem)
+    })
+    return cardDiv
+}
+const sideItemGen = (container) => {
+    const sidesTitle = (0,_homeTab__WEBPACK_IMPORTED_MODULE_0__.titleDivMaker)("Sides") 
+    const item1= card("Corn", lorem15(), "$3", cache["./mexicanCorn.jpg"])
+    const item2= card("Rice", lorem15(), "$2", cache["./rice.jpg"]) 
+    
+    container.append(sidesTitle,item1,item2)
+}
+const mainItemGen = (container) => {
+    const entreeTitle = (0,_homeTab__WEBPACK_IMPORTED_MODULE_0__.titleDivMaker)("Entrees")
+    const item1= card("Taco", lorem15(), "$4", cache["./taco.jpg"])
+    const item2= card("Steak", lorem15(), "$10", cache["./steak.jpg"])
+    container.append(entreeTitle,item1,item2)
+}
+const drinkItemGen = (container) => {
+    const beverageTitle = (0,_homeTab__WEBPACK_IMPORTED_MODULE_0__.titleDivMaker)("Beverages")
+    const item1= card("Marg", lorem15(), "$10", cache["./marg.jpg"])
+    const item2= card("Punch", lorem15(), "$10", cache["./punch.jpg"])
+    container.append(beverageTitle,item1,item2)
+    //gen drink items
+}
+const lorem15 = () => {
+    return "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, facere! Blanditiis aut asperiores nostrum deserunt."
+}
+
+
+
+
+
+/***/ }),
+
+/***/ "./assets/contactMe.gif":
+/*!******************************!*\
+  !*** ./assets/contactMe.gif ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "contactMe.gif";
+
+/***/ }),
+
+/***/ "./assets/enchalada.jpeg":
+/*!*******************************!*\
+  !*** ./assets/enchalada.jpeg ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "enchalada.jpeg";
+
+/***/ }),
+
+/***/ "./assets/logo.jpg":
+/*!*************************!*\
+  !*** ./assets/logo.jpg ***!
+  \*************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "logo.jpg";
+
+/***/ }),
+
+/***/ "./assets/marg.jpg":
+/*!*************************!*\
+  !*** ./assets/marg.jpg ***!
+  \*************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "marg.jpg";
+
+/***/ }),
+
+/***/ "./assets/mexicanCorn.jpg":
+/*!********************************!*\
+  !*** ./assets/mexicanCorn.jpg ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "mexicanCorn.jpg";
+
+/***/ }),
+
+/***/ "./assets/pickle.jpg":
+/*!***************************!*\
+  !*** ./assets/pickle.jpg ***!
+  \***************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "pickle.jpg";
+
+/***/ }),
+
+/***/ "./assets/punch.jpg":
+/*!**************************!*\
+  !*** ./assets/punch.jpg ***!
+  \**************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "punch.jpg";
+
+/***/ }),
+
+/***/ "./assets/rice.jpg":
+/*!*************************!*\
+  !*** ./assets/rice.jpg ***!
+  \*************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "rice.jpg";
+
+/***/ }),
+
+/***/ "./assets/steak.jpg":
+/*!**************************!*\
+  !*** ./assets/steak.jpg ***!
+  \**************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "steak.jpg";
 
 /***/ }),
 
@@ -676,7 +972,19 @@ const contactTab = () => {
   \*************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "taco.jpg";
+
+/***/ }),
+
+/***/ "./assets/tacoDance.gif":
+/*!******************************!*\
+  !*** ./assets/tacoDance.gif ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "tacoDance.gif";
 
 /***/ }),
 
@@ -686,6 +994,7 @@ module.exports = __webpack_require__.p + "taco.jpg";
   \********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "tacoMonster.gif";
 
 /***/ })
@@ -825,8 +1134,9 @@ module.exports = __webpack_require__.p + "tacoMonster.gif";
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
+"use strict";
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
@@ -840,4 +1150,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle500c73518c7df1c2e5c3.js.map
+//# sourceMappingURL=bundle56764d2d15d0373c9a12.js.map

@@ -30,7 +30,7 @@ const hoursOfOperation = () => {
     const container = document.createElement("div")
     container.classList.add("schedule")
     const smallTitle = document.createElement("h2")
-    smallTitle.innerHTML = "Hours"
+    smallTitle.innerHTML = "Hours:"
     container.appendChild(smallTitle)
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     days.forEach(((item) => {

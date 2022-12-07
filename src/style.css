@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+:root {
+    --shadow-color: 0deg 0% 0%;
+    --shadow-elevation-medium:
+    0.1px 0.6px 0.7px hsl(var(--shadow-color) / 0.11),
+    0.2px 2.1px 2.4px -0.8px hsl(var(--shadow-color) / 0.11),
+    0.5px 5.3px 6px -1.7px hsl(var(--shadow-color) / 0.11),
+    1.3px 12.9px 14.6px -2.5px hsl(var(--shadow-color) / 0.11);
+}
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -7,8 +16,9 @@
     padding: 0;
     font: inherit;
 }
-html {
-   
+html * {
+    font-family: 'Goudy Bookletter 1911', serif;
+
 }
 body {
     min-width: 600px;
@@ -16,6 +26,7 @@ body {
     background-image: url("~/assets/taco.jpg");
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 body > * {
 }
@@ -27,43 +38,59 @@ img,picture,svg,video {
 input,textarea,button,select {
     font: inherit;
 }
+img {
+    margin-left: auto;
+    margin-right: auto;
+}
+h2,h3 {
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+.title {
+    font-size: 1.75rem;
+}
 .header {
-    height: 64px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items:flex-end;
-    background-color: dimgray;
-    opacity: .9;
+    background-color: #92a5c3;
 }
 .header > * {
-    height: 50%;
+    cursor: pointer;
+    height: 70%;
     padding: 5px;
     margin: 0px 10px;
     border: 1px black solid;
     border-bottom: 0;
-    background-color: dimgray;
+    background-color: #92a5c3;
+}
+
+.header > *:hover {
+    font-weight: 900;
 }
 .contentContainer {
     margin-top: 20px;
     margin-inline: auto;
-    width: max(80%, 480px);
-    min-height: 1200px;
-    background-color: dimgray;
-    opacity: .9;
-
+    width: clamp(480px,90%, 900px);
+/*     min-height: 1200px;
+ */    background-color: #92a5c3;
     text-align: center;
-    padding-top: 20px;
+    padding: 20px 0px;
 }
 .content{
     display: flex;
     gap: 50px;
     flex-direction: column;
 }
+
 .content > * {
     flex: 0 1 80%;
-    border: 5px white solid;
+    box-shadow: var(--shadow-elevation-medium);
+    border-radius: 15px;
     margin: 0px 15%;
     padding: 10px;
+    background-color: aliceblue;
 }
 
 .footer {
@@ -71,14 +98,17 @@ input,textarea,button,select {
     justify-content:space-around;
     align-items: center;
     margin-top: 10px;
-    background-color: dimgray;
-    min-height: 64px;
-    opacity: .9;
+    background-color: #92a5c3;
+    min-height: 40px;
     padding: 5px;
 }
 .footer > * {
     flex: none;
     min-width: 25ch;
     margin: 5px;
+}
+.contactInfo {
+    background-color: #92a5c3;
+    box-shadow: none;
 }
 
